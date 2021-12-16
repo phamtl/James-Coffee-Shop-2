@@ -1,0 +1,691 @@
+html, body{
+    margin: 0;
+}
+
+@font-face{
+    font-family: Poppins;
+    src: url(fonts/Poppins-Light.ttf);
+    /* Indian Type Foundry, Pinhorn, J., n.d.. Poppins. [online] fonts.google.com. Available at <https://fonts.google.com/specimen/Poppins?query=poppins#standard-styles> [Accessed 17 September 2021] */
+}
+
+.container{
+    display: block;
+    height: fit-content;
+    font-family: Poppins;
+}
+
+/* navigation bar */
+.navigation_bar{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.navigation_bar a{
+    color: #4E4A42;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigation_bar a:hover{
+    color: rgba(78,74,66,0.4);
+}
+
+.logo{
+    font-size: 5vh;
+    padding: 15px 25px;
+}
+
+.page{
+    font-size: 4vh;
+    margin: 20px 25px;
+}
+
+.page a{
+    padding: 5px 30px;
+}
+
+/* Home/index */
+/* intro */
+#home_intro{
+    height: 90vh;
+    overflow: hidden;
+    background-image: url("images/home_intro.jpg");
+    /* Pixabay, 2016, Link: https://pixabay.com/vi/photos/cà-phê-tách-cà-phê-lối-sống-cốc-1276778/ Accessed: 15/09/2021 15.20 */
+    background-size: cover;
+}
+
+#home_intro_text{
+    color: white;
+    margin: 30% 10%;
+}
+
+#home_intro_text p{
+    font-size: 9vh;
+}
+
+/* grid */
+#grid_container{
+    margin: 5% 18%;
+    height: fit-content;
+}
+
+#passion_grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 5vw;
+}
+
+.passion_words{
+    font-size: 20px;
+}
+
+.passion_pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* forward */
+hr{
+    width: 60%;
+    border-style: solid;
+}
+.forward{
+    margin: 3% 18%;
+    text-align: center;
+}
+
+.forward_text_container{
+    padding: 10vh 0;
+}
+
+.forward_text{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.forward_button{
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: rgba(78,74,66,0.4);
+    cursor: pointer;
+}
+
+/* footer */
+#footer{
+    background-color: rgb(39,37,33);
+    color: white;
+}
+
+#footer_grid_container{
+    padding: 3% 0 0;
+    margin: 0 18%;
+}
+
+#footer_grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+#footer_contact_info{
+    font-size: 20px;
+}
+
+#motto_and_copyright{
+    grid-column: 1/3;
+    text-align: center;
+}
+
+#social_media a{
+    text-decoration: none;
+}
+.sm_icon{
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* process */
+#process_intro{
+    height: 90vh;
+    overflow: hidden;
+    background-image: url("images/process_intro.jpg");
+    /* Unsplash, 2020, Link: https://unsplash.com/photos/nUi_WHeWWpA  Accessed: 16/09/2021 15.17 */
+    background-size: cover;
+}
+
+#process_intro_text{
+    color: white;
+    margin: 30% 10%;
+}
+
+#process_intro_text p{
+    font-size: 9vh;
+}
+
+#intro{
+    margin: 5%;
+}
+
+#intro p{
+    font-size: 20px;
+    text-align: center;
+}
+
+#process_grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(10, auto);
+    gap: 60px;
+}
+
+.process_steps{
+    text-align: center;
+    font-size: 20px;
+}
+.step_name{
+    font-size: 30px;
+}
+
+.process_pic{
+    height: 40vh;
+    width: 24vw;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 35px 0;
+}
+
+.forward_block{
+    margin: 5% 15%;
+    padding: 0 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.forward_pic{
+    height: 45vh;
+    width: 23vw;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* about us */
+#about_intro_text{
+    margin: 8% 0 5%;
+    text-align: center;
+    font-size: 5vh;
+}
+#about_pic_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5% 0;
+}
+
+.staff_pic{
+    object-fit: cover;
+    height: 35vh;
+    width: 35vh;
+    border-radius: 50%;
+}
+
+#about_contact_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 0 10%;
+}
+
+#visit_pic{
+    height: 30vh;
+    width: 30vw;
+    object-fit: cover;
+}
+
+#about_contact h2{
+    font-size: 4vh;
+    text-transform: uppercase;
+}
+
+#about_contact_info, #visit_time{
+    font-size: 3vh;
+}
+
+/* booking */
+#map{
+    text-align: center;
+}
+
+#map_pic{
+    height: 68vh;
+    width: 42vw;
+}
+
+#form{
+    margin: 0 27% 5%;
+    text-align: center;
+    line-height: 200%;
+}
+
+legend{
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.form_button{
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* holding */
+#holding_text{
+    height: 90vh;
+    background-image: url("images/holding.jpg");
+    /* Unsplash, 2018, Link: https://unsplash.com/photos/U4wcrDteZ2Y  Accessed: 16/09/2021 12.17 */
+    background-size: cover;
+}
+
+#holding_text p{
+    font-size: 7vh;
+    padding: 28% 34%;
+    color: white;
+    margin: 0;
+}
+
+/* phones */
+@media(max-width:1024px){
+    /* navigation bar */
+    .navigation_bar {
+        height: 11vh;
+    }
+    .logo {
+        font-size: 30px;
+        padding: 15px 10px 0 20px;
+    }
+
+    /* home */
+    .passion_words {
+        font-size: 14px;
+    }
+    .forward_pic {
+        height: 35vh;
+    }
+    .forward_text_container {
+        padding: 2vh 3vw;
+    }
+
+    /* process */
+    .process_pic {
+        height: 37vh;
+    }
+
+    /* booking */
+    #map_pic {
+        width: 51vw;
+    }
+}
+
+@media(max-width:970px){
+    /* navigation bar */
+    .navigation_bar {
+        height: 13vh;
+    }
+    .logo {
+        font-size: 28px;
+        padding: 20px 5px 0 20px;
+    }
+    .page {
+        font-size: 25px;
+        margin: 22px 25px;
+    }
+
+    /* home */
+    .forward_pic {
+        height: 33vh;
+    }
+
+    /* footer */
+    #footer_contact_info {
+        font-size: 18px;
+    }
+
+    /* process */
+    .process_pic {
+        height: 37vh;
+        width: 25vw;
+    }
+    .step_name {
+        font-size: 25px;
+    }
+    .process_steps {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:770px){
+    /* navigation bar */
+    .logo {
+        margin: 5px 5px;
+        font-size: 20px;
+    }
+    .page{
+        margin: 30px 5px 0;
+        font-size: 18px;
+    }
+    .page a {
+        padding: 5px 8px;
+    }
+
+    /* home */
+    .passion_words {
+        font-size: 10px;
+    }
+    .forward_pic {
+        height: 28vh;
+        width: 24vw;
+    }
+    .forward_text_container {
+        padding: 0;
+    }
+    .forward_text {
+        font-size: 19px;
+        margin: 25px 0;
+    }
+
+    /* footer */
+    #footer_contact_info {
+        font-size: 15px;
+    }
+    .sm_icon {
+        height: 50px;
+    }
+    #motto_and_copyright{
+        font-size: 10px;
+    }
+
+    /* process */
+    #intro p {
+        font-size: 17px;
+    }
+    .step_name {
+        font-size: 22px;
+    }
+    .process_steps {
+        font-size: 15px;
+    }
+    #process_grid {
+        row-gap: 10vh;
+        column-gap: 5vw;
+    }
+    .process_pic {
+        height: 30vh;
+        width: 25vw;
+        margin-top: 35px;
+    }
+
+    /* about */
+    .staff_pic {
+        object-fit: cover;
+        height: 18vh;
+        width: 18vh;
+    }    
+
+    /* booking */
+    #map_pic {
+        height: 55vh;
+        width: 56vw;
+    }
+    legend {
+        font-size: 3vh;
+    }
+
+    /* holding */
+    #holding_text p {
+        font-size: 5vh;
+        padding: 36% 34%;
+    }
+}
+
+@media(max-width:660px){
+    /* home */
+    #home_intro{
+        height: 60vh;
+    }
+    #home_intro_text p{
+        font-size: 7vh;
+    }
+
+    /* process */
+    #process_intro{
+        height: 60vh;
+    }
+    #process_intro_text p{
+        font-size: 7vh;
+    }
+
+    /* menu */
+    #menu_grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(17, auto);
+        gap: 50px;
+    }
+    .options{
+        grid-column: 1/3;
+        text-align: center;
+        font-size: 5vh;
+    }
+    .pic_container{
+        text-align: center;
+    }
+}
+
+@media(max-width:572px){
+    /* navigation bar */
+    .navigation_bar {
+        height: 10vh;
+    }
+    .logo {
+        margin: 3px 5px;
+        font-size: 15px;
+    }
+    .page {
+        margin: 25px 5px 0;
+        font-size: 13px;
+    }
+    /* home */
+    #home_intro{
+        height: 40vh;
+    }
+    #home_intro_text p{
+        font-size: 5vh;
+    }
+    .passion_words {
+        font-size: 6px;
+    }
+    .forward_pic {
+        height: 16vh;
+        width: 22vw;
+    }
+    .forward_text {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .forward_button {
+        font-size: 15px;
+    }
+    /* footer */
+    #footer_contact_info {
+        font-size: 11px;
+    }
+    .sm_icon {
+        height: 38px;
+    }
+    
+    /* process */
+    #process_intro{
+        height: 40vh;
+    }
+    #process_intro_text p{
+        font-size: 5vh;
+    }
+    .step_name {
+        font-size: 17px;
+    }
+    .process_steps {
+        font-size: 10px;
+    }
+    .process_pic {
+        height: 18vh;
+        width: 25vw;
+        margin-top: 40px;
+    }
+
+    /* about */
+    .staff_pic {
+        object-fit: cover;
+        height: 13vh;
+        width: 13vh;
+    }
+    #about_contact h2 {
+        font-size: 3vh;
+    }
+    #about_contact_info, #visit_time {
+        font-size: 2vh;
+    }
+    #visit_pic {
+        height: 25vh;
+        width: 42vw;
+    }
+    
+    /* holding */
+    #holding_text {
+        height: 60vh;
+    }
+    #holding_text p {
+        font-size: 4vh;
+    }
+}
+
+@media(max-width:455px){
+    /* navigation bar */
+    .logo {
+        font-size: 12px;
+        padding: 22px 0px 15px 20px;
+    }
+    .page {
+        font-size: 11px;
+        margin-top: 26px;
+    }
+    .page a {
+        padding: 5px 2px;
+    }
+    
+    /* home */
+    .passion_words {
+        font-size: 8px;
+    }
+    .forward_block {
+        margin: 5% 5%;
+    }
+    .forward_pic {
+        height: 16vh;
+        width: 27vw;
+    }
+
+    /* process */
+    #intro p {
+        font-size: 12px;
+    }
+    #grid_container {
+        margin: 5%;
+        height: fit-content;
+    }
+    .step_name {
+        font-size: 15px;
+    }
+    .process_steps {
+        font-size: 13px;
+    }
+    .process_pic {
+        height: 18vh;
+        width: 30vw;
+        margin-top: 40px;
+    }
+    
+    /* menu */
+    #menu_grid{
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(28, auto);
+        row-gap: 50px;
+        column-gap: 0;
+    }
+    .options{
+        text-align: center;
+        font-size: 5vh;
+    }
+    .details{
+        grid-column: 1/2;
+        text-align: center;
+    }
+    .pic_container{
+        text-align: center;
+    }
+
+    /* booking */
+    #map_pic {
+        height: 43vh;
+        width: 88vw;
+    }
+    legend {
+        font-size: 15px;
+    }
+
+    /* holding */
+    #holding_text p {
+        font-size: 3vh;
+        padding: 49% 34%;
+    }
+}
+
+@media(max-width:392px){
+    /* navigation bar */
+    .navigation_bar {
+        height: 8vh;
+    }
+    .logo {
+        font-size: 10px;
+        padding: 16px 0px 10px 10px;
+    }
+    .page {
+        font-size: 10px;
+        margin-top: 19px;
+    }
+
+    /* about */
+    .staff_pic {
+        object-fit: cover;
+        height: 11vh;
+        width: 11vh;
+    }
+    #about_contact h2 {
+        font-size: 2vh;
+    }
+    #about_contact_info, #visit_time {
+        font-size: 10px;
+    }
+}

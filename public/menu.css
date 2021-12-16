@@ -1,0 +1,60 @@
+#menu{
+    text-align: center;
+    font-size: 6vh;
+    padding: 10px 0;
+    color: #4E4A42;
+}
+
+#choice_bar{
+    padding: 10px 0;
+    margin-bottom: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-style: solid;
+    border-color: #4E4A42;
+}
+
+#choice_bar a{
+    text-decoration: none;
+    font-size: 3vh;
+    color: #4E4A42;
+}
+
+#choice_bar a:hover{
+    color: rgba(78,74,66,0.4);
+}
+
+#menu_grid_container{
+    margin: 3% 10%;
+}
+
+#menu_grid{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(12, auto);
+    gap: 50px;
+    text-align: center;
+}
+
+.options{
+    grid-column: 1/4;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.pic_container{
+    text-align: center;
+}
+
+.menu_pic{
+    height: 23vh;
+    width: 23vh;
+    border-radius: 50%;
+}
+
+.text_container{
+    text-align: center;
+    font-size: 3vh;
+}

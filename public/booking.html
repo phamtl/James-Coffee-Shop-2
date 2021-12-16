@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="James Coffee Shop">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <title>Table Booking</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Citations for the favicon are in the index.html page -->
+</head>
+<body>
+  <div class="container">
+    <div class="navigation_bar">
+      <div class="logo">
+        <a href="index.html">James Coffee Shop</a>
+      </div>
+      
+      <div class="page">
+        <a href="process.html">Coffee Story</a>
+        <a href="menu.html">Menu</a>
+        <a href="about_us.html">About Us</a>
+      </div>
+    </div>
+
+    <div class="content_container">
+      <div id="map">
+        <img id="map_pic" src="images/table_map.png" alt="Tables Map.">
+        <!-- Self designed map using Paint -->
+      </div>
+
+      <div id="form">
+        <fieldset>
+          <legend>Reservation Form:</legend>
+
+          <form action="booking.html">
+            <label class="reservation" for="full_name">Full name:</label><br>
+            <input class="input" type="text" id="full_name" placeholder="John Doe" required><br>
+            
+            <label class="reservation" for="telephone">Phone Number:</label><br>
+            <input class="input" type="tel" id="telephone" placeholder="0123456789" required><br>
+            
+            <label class="reservation" for="email">Email (optional):</label><br>
+            <input class="input" type="email" id="email" placeholder="lucky@jamescoffee.com"><br>
+            
+            <label class="reservation" for="date">Reservation Date:</label><br>                            
+            <input class="input" type="date" id="date" placeholder="Pick a date." required><br>
+            
+            <label class="reservation" for="arriving_time">Time Arriving:</label><br>
+            <input class="input" type="time" id="arriving_time" placeholder="Select your arriving time." required><br>
+                                        
+            <label class="reservation" for="table">Table:</label><br>
+            <input class="input" list="tables" id="table" placeholder="Select your table" required>
+            <datalist id="tables">
+                    <option value="Inside"></option>
+                    <option value="Outside"></option>
+                    <option value="All"></option>
+            </datalist><br>
+
+            <input class="form_button" type="submit" value="Submit">
+            <input class="form_button" type="reset" value="Reset">
+            
+          </form>
+        </fieldset>
+      </div>
+    </div>
+
+    <div id="footer">
+      <div id="footer_grid_container">
+        <div id="footer_grid">
+          <div id="footer_contact_info">
+            <p><b>Location:</b> GD01, Ecopark, Xuan Quan, Van Giang, Hung Yen</p>
+            <p><b>Tel:</b> <u>0987654321</u></p>
+            <p><b>Email:</b> <i>smile@jamescoffee.com</i> </p>
+          </div>
+
+          <div id="social_media">
+            <a href="holding.html">
+                <img class="sm_icon" src="images/facebook_icon.jpg" alt="Facebook">
+                <!-- screenshot picture from personal mobile phone -->
+            </a>
+            <a href="holding.html">
+                <img class="sm_icon" src="images/instagram_icon.jpg" alt="Instagram">
+                <!-- screenshot picture from personal mobile phone -->
+            </a>
+            <a href="holding.html">
+                <img class="sm_icon" src="images/twitter_icon.jpg" alt="Twitter">
+                <!-- screenshot picture from personal mobile phone -->
+            </a>
+          </div>
+
+          <div id="motto_and_copyright">
+            <p>Ignite your brightest smile!</p>
+            <p>© 2021 JAMES COFFEE SHOP</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    //check whether browser support service workers
+    if ('serviceWorker' in navigator)
+    {
+      //wait until page loaded to avoid delaying rendering
+      window.addEventListener('load', function()
+      {
+        //register service worker
+        navigator.serviceWorker.register('serviceworker.js').then
+        (
+          function(registration) {
+            console.log('Service worker registration successful',registration);
+          },
+          function(err) {
+            console.log('Service worker registration failed', err);
+          }
+        );
+      });
+    }
+  </script>
+</body>
+</html>

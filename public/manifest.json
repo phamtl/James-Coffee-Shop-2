@@ -1,0 +1,28 @@
+{
+    "name": "jamescoffeeshop",
+    "displayName": "James Coffee Shop",
+    "display": "standalone",
+    "description": "Welcome To James Coffee Shop, a heaven of passion and joy.",
+    "starting_url": "https://jamescoffee-jcs2021.web.app/?fbclid=IwAR0WSDbFj5Gc7IKnUrYnFj4erquDbeeoKO55MUBL8uU-VqJLCafGuXVRXYU",
+    "author": {
+        "name": "Thanh Long"
+      },
+    "background_color": "#DFDFDF",
+    "theme_color": "#DFDFDF",
+    "icons": 
+    [
+        {
+            "src": "favicon/android-chrome-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any"
+        },
+
+        {
+            "src": "favicon/android-chrome-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any"
+        }
+    ]
+}
